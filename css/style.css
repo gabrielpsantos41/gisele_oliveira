@@ -1,0 +1,379 @@
+/* ==========================================================================
+   VARIÁVEIS DE DESIGN & TEMA (PALETA EXCLUSIVA)
+   ========================================================================== */
+:root {
+  --color-navy: #14243A;
+  --color-gold: #B99A5B;
+  --color-gold-hover: #9E8247;
+  --color-white: #FFFFFF;
+  --color-light-bg: #F5F6F8;
+  --color-text-muted: #626B78;
+  --color-light-muted: #CBD5E1;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --transition-base: all 0.3s ease;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-sans);
+  color: var(--color-navy);
+  background-color: var(--color-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Tipografia */
+.text-serif {
+  font-family: var(--font-serif);
+}
+
+.text-navy {
+  color: var(--color-navy) !important;
+}
+
+.text-gold {
+  color: var(--color-gold) !important;
+}
+
+.bg-navy {
+  background-color: var(--color-navy) !important;
+}
+
+.bg-light-section {
+  background-color: var(--color-light-bg) !important;
+}
+
+.text-light-muted {
+  color: var(--color-light-muted) !important;
+}
+
+.tiny {
+  font-size: 0.78rem;
+}
+
+.tracking-wider {
+  letter-spacing: 0.08em;
+}
+
+.max-w-700 {
+  max-width: 700px;
+}
+
+.min-height-350 {
+  min-height: 350px;
+}
+
+/* Brand Identity Typography */
+.brand-name {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-navy);
+  line-height: 1.2;
+}
+
+.brand-sub {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  color: var(--color-gold);
+}
+
+/* Navbar Customizations */
+.navbar-nav .nav-link {
+  color: var(--color-navy);
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem !important;
+  transition: var(--transition-base);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--color-gold);
+}
+
+/* Buttons */
+.btn-gold {
+  background-color: var(--color-gold);
+  color: var(--color-white);
+  border: 1px solid var(--color-gold);
+  font-weight: 600;
+  transition: var(--transition-base);
+}
+
+.btn-gold:hover, .btn-gold:focus {
+  background-color: var(--color-gold-hover);
+  border-color: var(--color-gold-hover);
+  color: var(--color-white);
+}
+
+.btn-outline-gold {
+  border: 1px solid var(--color-gold);
+  color: var(--color-navy);
+  font-weight: 600;
+  transition: var(--transition-base);
+}
+
+.btn-outline-gold:hover {
+  background-color: var(--color-gold);
+  color: var(--color-white);
+}
+
+.btn-outline-navy {
+  border: 1px solid var(--color-navy);
+  color: var(--color-navy);
+  transition: var(--transition-base);
+}
+
+.btn-outline-navy:hover {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+}
+
+.btn-outline-light-custom {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: var(--color-white);
+  font-weight: 500;
+  transition: var(--transition-base);
+}
+
+.btn-outline-light-custom:hover {
+  background-color: var(--color-white);
+  color: var(--color-navy);
+}
+
+/* Hero Elements */
+.badge-gold {
+  background-color: rgba(185, 154, 91, 0.15);
+  color: var(--color-gold);
+  font-size: 0.82rem;
+  font-weight: 600;
+  border: 1px solid rgba(185, 154, 91, 0.3);
+}
+
+.hero-img {
+  object-fit: cover;
+  max-height: 480px;
+  width: 100%;
+}
+
+.hero-card-accent {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background: var(--color-white);
+  max-width: 260px;
+  border-left: 4px solid var(--color-gold);
+}
+
+/* Border Accent Decorative */
+.border-gold-accent {
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  width: 60%;
+  height: 60%;
+  border-right: 3px solid var(--color-gold);
+  border-bottom: 3px solid var(--color-gold);
+  z-index: -1;
+  border-radius: 0 0 1rem 0;
+}
+
+/* Service Cards */
+.card-service {
+  transition: var(--transition-base);
+  border-top: 3px solid transparent !important;
+}
+
+.card-service:hover {
+  transform: translateY(-5px);
+  border-top: 3px solid var(--color-gold) !important;
+  box-shadow: 0 12px 24px rgba(20, 36, 58, 0.08) !important;
+}
+
+.bg-soft-navy {
+  background-color: rgba(20, 36, 58, 0.05);
+}
+
+.bg-soft-gold {
+  background-color: rgba(185, 154, 91, 0.12);
+}
+
+.icon-shape {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-gold {
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+.link-gold:hover {
+  color: var(--color-gold-hover);
+  text-decoration: underline;
+}
+
+/* Feature & Step Boxes */
+.icon-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-box, .step-card {
+  transition: var(--transition-base);
+}
+
+.feature-box:hover, .step-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Accordion Customization */
+.custom-accordion .accordion-button {
+  background-color: var(--color-white);
+  padding: 1.25rem 1.5rem;
+  box-shadow: none !important;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  color: var(--color-navy);
+  background-color: rgba(185, 154, 91, 0.08);
+  border-left: 3px solid var(--color-gold);
+}
+
+.custom-accordion .accordion-button::after {
+  filter: grayscale(1);
+}
+
+/* Contact Section */
+.contact-icon-bg {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer Links */
+.footer-links a {
+  color: var(--color-light-muted);
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  transition: var(--transition-base);
+}
+
+.footer-links a:hover {
+  color: var(--color-gold);
+  padding-left: 4px;
+}
+
+.border-gold-subtle {
+  border-top: 1px solid rgba(185, 154, 91, 0.3) !important;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 56px;
+  height: 56px;
+  background-color: #25D366;
+  color: #FFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  z-index: 999;
+  transition: var(--transition-base);
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  color: #FFF;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 90px;
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-navy);
+  color: var(--color-gold);
+  border: 1px solid var(--color-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-base);
+  cursor: pointer;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background-color: var(--color-gold);
+  color: var(--color-white);
+}
+
+/* Animations with IntersectionObserver */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Prefer-reduced-motion support */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+  .card-service:hover, .feature-box:hover, .whatsapp-float:hover {
+    transform: none;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+  .hero-card-accent {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: -30px;
+    margin-left: 15px;
+  }
+  
+  .border-gold-accent {
+    display: none;
+  }
+}
